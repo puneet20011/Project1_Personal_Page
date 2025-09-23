@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sourav Das" />
+    <meta name="description" content="REPLACE_PER_PAGE" />
+
+    <link
+      rel="icon"
+      href="./assets/icons/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./assets/icons/favicon-16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./assets/icons/sourav_icon.png" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <title>Design Document — Sourav Das</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="container section">
+      <h1 class="section-title">Design Document</h1>
+
+      <!-- Table of contents -->
+      <nav class="mb-4">
+        <ul class="list-inline small">
+          <li class="list-inline-item">
+            <a href="#description">Project description</a>
+          </li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item">
+            <a href="#personas">User personas</a>
+          </li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item"><a href="#stories">User stories</a></li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item">
+            <a href="#mockups">Design mockups</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Project description -->
+      <section id="description" class="reveal">
+        <div class="feature-box">
+          <h2 class="h4 mb-2">Project description</h2>
+          <p class="mb-0">
+            This site is a personal homepage built with HTML5, CSS3, and ES6
+            modules (no frameworks, no jQuery). It showcases who I am,
+            highlights projects, and provides quick access to my resume. The
+            design aims to be fast, responsive, accessible, and easy to extend.
+          </p>
+        </div>
+      </section>
+
+      <!-- Personas -->
+      <section id="personas" class="mt-4 reveal">
+        <h2 class="section-title">User personas</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="persona-card">
+              <header class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h3 class="h5 mb-1">Maya — Tech Recruiter</h3>
+                  <p class="text-body-secondary mb-2">
+                    Skims portfolios to fill SWE/Data roles
+                  </p>
+                </div>
+                <span class="badge bg-dark">Goal-oriented</span>
+              </header>
+              <ul class="mb-2">
+                <li>
+                  <strong>Goals:</strong> Judge fit fast, grab resume, skim 2–3
+                  projects.
+                </li>
+                <li>
+                  <strong>Behaviors:</strong> 30–60s per site; mobile or laptop;
+                  hates slow pages.
+                </li>
+                <li>
+                  <strong>Pain points:</strong> Messy navigation, buried resume,
+                  vague project impact.
+                </li>
+                <li>
+                  <strong>Success:</strong> Finds resume in 1 click; sees
+                  measurable outcomes on projects.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="persona-card">
+              <header class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h3 class="h5 mb-1">Dr. Lee — Course Instructor</h3>
+                  <p class="text-body-secondary mb-2">
+                    Evaluates assignment criteria & craft quality
+                  </p>
+                </div>
+                <span class="badge bg-secondary">Evaluator</span>
+              </header>
+              <ul class="mb-2">
+                <li>
+                  <strong>Goals:</strong> Confirm rubric: ES modules,
+                  accessibility, original JS.
+                </li>
+                <li>
+                  <strong>Behaviors:</strong> Tests on desktop; inspects code
+                  structure & linting.
+                </li>
+                <li>
+                  <strong>Pain points:</strong> Hidden code, unclear design
+                  rationale.
+                </li>
+                <li>
+                  <strong>Success:</strong> Clear design doc, readable code,
+                  working interactions.
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-md-4">
+            <article class="persona-card">
+              <header class="d-flex justify-content-between align-items-start">
+                <div>
+                  <h3 class="h5 mb-1">Arjun — Grad Peer/Collaborator</h3>
+                  <p class="text-body-secondary mb-2">
+                    Looking for teammates & code samples
+                  </p>
+                </div>
+                <span class="badge bg-info text-dark">Peer</span>
+              </header>
+              <ul class="mb-2">
+                <li>
+                  <strong>Goals:</strong> Skim tech stack, demos, and contact
+                  links.
+                </li>
+                <li>
+                  <strong>Behaviors:</strong> Desktop first; reads project
+                  summaries thoroughly.
+                </li>
+                <li>
+                  <strong>Pain points:</strong> No live links, no stack
+                  mentions, poor structure.
+                </li>
+                <li>
+                  <strong>Success:</strong> Understands skills + finds a project
+                  worth exploring.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- User stories -->
+      <section id="stories" class="mt-4 reveal">
+        <h2 class="section-title">User stories</h2>
+
+        <article class="story">
+          <h3 class="h6 mb-1">Recruiter — Resume access</h3>
+          <p class="mb-2">
+            <em
+              >As a recruiter, I want to download a PDF resume in one click so
+              that I can attach it to the ATS quickly.</em
+            >
+          </p>
+          <details>
+            <summary>Acceptance criteria</summary>
+            <ul class="mb-0">
+              <li>
+                Given I’m on any page, when I open the navigation, then I see a
+                link to “Resume”.
+              </li>
+              <li>
+                When I click it, then a PDF is visible with a visible Download
+                link.
+              </li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="story">
+          <h3 class="h6 mb-1">Recruiter — Project impact</h3>
+          <p class="mb-2">
+            <em
+              >As a recruiter, I want 2–3 bullets per project with outcomes so
+              that I can assess impact quickly.</em
+            >
+          </p>
+          <details>
+            <summary>Acceptance criteria</summary>
+            <ul class="mb-0">
+              <li>
+                Each card shows a short description with measurable results or
+                tech used.
+              </li>
+              <li>Cards are readable on mobile and desktop.</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="story">
+          <h3 class="h6 mb-1">Instructor — Evaluate rubric items</h3>
+          <p class="mb-2">
+            <em
+              >As an instructor, I want a dedicated Design Document so that I
+              can verify personas, stories, and mockups quickly.</em
+            >
+          </p>
+          <details>
+            <summary>Acceptance criteria</summary>
+            <ul class="mb-0">
+              <li>
+                Design page lists project description, personas, stories, and
+                mockups.
+              </li>
+              <li>
+                Site uses ES6 modules; original JS interaction is present
+                (canvas particles).
+              </li>
+              <li>Lint passes with provided config.</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="story">
+          <h3 class="h6 mb-1">Peer — Find contact</h3>
+          <p class="mb-2">
+            <em
+              >As a peer, I want obvious links to GitHub/LinkedIn so that I can
+              reach out for collaboration.</em
+            >
+          </p>
+          <details>
+            <summary>Acceptance criteria</summary>
+            <ul class="mb-0">
+              <li>
+                Footer contains GitHub/LinkedIn/Email links on every page.
+              </li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="story">
+          <h3 class="h6 mb-1">All — Performance & access</h3>
+          <p class="mb-2">
+            <em
+              >As a visitor, I want pages to load fast and be readable in dark
+              or light themes so that the experience is comfortable.</em
+            >
+          </p>
+          <details>
+            <summary>Acceptance criteria</summary>
+            <ul class="mb-0">
+              <li>
+                Core content loads without blocking JS; theme toggle remembers
+                preference.
+              </li>
+              <li>Text has sufficient contrast; images have alt text.</li>
+            </ul>
+          </details>
+        </article>
+      </section>
+
+      <!-- Mockups (CSS wireframes) -->
+      <section id="mockups" class="mt-4 reveal">
+        <h2 class="section-title">Design mockups</h2>
+        <p class="mb-3">
+          Low-fidelity wireframes built with simple CSS boxes (no images). They
+          reflect the overall structure of the homepage and a content page.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="mock-browser">
+              <div class="mock-toolbar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-hero"></div>
+              <div class="mock-content">
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+              </div>
+            </div>
+            <p class="small text-body-secondary mt-2 mb-0">
+              Mockup A — Home: hero + three sections
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="mock-browser">
+              <div class="mock-toolbar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mock-section"></div>
+              <div class="mock-list">
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+              </div>
+            </div>
+            <p class="small text-body-secondary mt-2 mb-0">
+              Mockup B — Content page: heading + list
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

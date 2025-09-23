@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Site metadata -->
+    <meta name="author" content="Sourav Das" />
+    <meta name="description" content="__REPLACE_THIS_PER_PAGE__" />
+
+    <!-- Icons -->
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="./assets/icons/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="./assets/icons/favicon-16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./assets/icons/sourav_icon.png" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <title>About — Sourav Das</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title text-center mb-4">About</h1>
+
+        <section class="reveal">
+          <div
+            id="open-book"
+            class="open-book is-closed"
+            aria-label="Interactive book about Sourav"
+            role="group"
+            aria-roledescription="book"
+          >
+            <!-- Visible spread -->
+            <div class="spread" aria-live="polite">
+              <div
+                class="leaf left"
+                id="leaf-left"
+                tabindex="0"
+                aria-label="Previous page (click)"
+              >
+                <div class="leaf-inner" id="leaf-left-inner"></div>
+              </div>
+              <div
+                class="leaf right"
+                id="leaf-right"
+                tabindex="0"
+                aria-label="Next page (click)"
+              >
+                <div class="leaf-inner" id="leaf-right-inner"></div>
+              </div>
+              <div class="spine" aria-hidden="true"></div>
+
+              <!-- Front cover -->
+              <button
+                id="cover-leaf"
+                class="cover-leaf"
+                type="button"
+                aria-label="Open book"
+              >
+                <div class="cover-content text-center">
+                  <h2 class="mb-1">Sourav Das</h2>
+                  <p class="mb-0">MS in Computer Science</p>
+                  <p class="mb-2">Northeastern University</p>
+                  <span class="small opacity-75">Click to open</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- UI -->
+            <div class="book-ui">
+              <button
+                class="btn btn-sm btn-outline-secondary me-2"
+                data-action="prev"
+                type="button"
+                aria-label="Previous"
+              >
+                ← Prev
+              </button>
+              <div class="small book-progress">
+                <span id="page-current">1–2</span> /
+                <span id="page-total">8</span> ·
+                <span id="page-title">Journey so far</span>
+              </div>
+              <button
+                class="btn btn-sm btn-outline-secondary ms-2"
+                data-action="next"
+                type="button"
+                aria-label="Next"
+              >
+                Next →
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hidden page store -->
+        <div id="page-store" hidden>
+          <!-- 1 -->
+          <article class="page" data-title="Journey so far">
+            <h3 class="h5 mb-2">Journey so far</h3>
+            <p class="mb-2">
+              I’m a graduate student in Computer Science at Northeastern
+              University, focused on building clean, scalable front-ends and
+              data-aware systems. Previously, I worked at Accenture on SAP
+              ecosystems and integrations, plus an engineering stint at
+              Wefivesoft building REST APIs.
+            </p>
+            <p class="mb-0 small text-body-secondary">
+              Click the right page to turn →
+            </p>
+          </article>
+
+          <!-- 2 -->
+          <article class="page" data-title="Why MSCS @ Northeastern">
+            <h3 class="h5 mb-2">Why MSCS in Northeastern University</h3>
+            <p class="mb-2">
+              Northeastern’s mix of rigorous CS fundamentals and hands-on
+              learning matches how I learn: build, test, iterate. I’m
+              particularly interested in algorithms, databases, and modern web
+              systems—the backbone of fast, reliable UX.
+            </p>
+            <p class="mb-0">
+              I enjoy turning messy requirements into simple flows with
+              accessibility and performance in mind.
+            </p>
+          </article>
+
+          <!-- 3 -->
+          <article class="page" data-title="Experience highlights">
+            <h3 class="h5 mb-2">Experience highlights</h3>
+            <ul class="mb-2">
+              <li>
+                Worked in Accenture as an SAP ABAP developer where I enhanced SAP purchase-order
+                flows (ME23N/ME21N), engineered ECC → S/4HANA transfers using BAPIs, resolved IS-U
+                incidents within SLA.
+              </li>
+            </ul>
+            <p class="mb-0 small text-body-secondary">
+              From enterprise systems to focused product features.
+            </p>
+          </article>
+
+          <!-- 4 -->
+          <article class="page" data-title="Selected projects">
+            <h3 class="h5 mb-2">Selected projects</h3>
+            <p class="mb-2">
+              <strong>Calendar Application:</strong> desktop calendar with
+              create/edit/delete events, recurring schedules, reminders,
+              multiple calendars, time zones (Java, Swing).
+            </p>
+            <p class="mb-0">
+              <strong>Semantic Search:</strong> Sentence-Transformers + FAISS
+              (FlatIP, IVF-Flat, IVF-PQ) on AG News; strong recall@10 with major
+              index-size and latency reductions (Python).
+            </p>
+          </article>
+
+          <!-- 5 -->
+          <article class="page" data-title="Skills & interests">
+            <h3 class="h5 mb-2">Skills & interests</h3>
+            <p class="mb-2">
+              <strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3,
+              Python, Java, SQL.
+            </p>
+            <p class="mb-2">
+              <strong>Web & UI:</strong> Bootstrap 5, responsive design,
+              accessibility, Canvas API.
+            </p>
+            <p class="mb-2">
+              <strong>Tools:</strong> Git, Linux/macOS, basic Node tooling.
+            </p>
+            <p class="mb-0">
+              <strong>Interests:</strong> performance-minded UX, clean
+              architecture, data-backed features.
+            </p>
+          </article>
+
+          <!-- 6 -->
+          <article class="page" data-title="Goals at NEU">
+            <h3 class="h5 mb-2">Goals at NEU</h3>
+            <ul class="mb-2">
+              <li>Sharpen core CS: algorithms, systems, data management.</li>
+              <li>Build portfolio projects with measurable outcomes.</li>
+              <li>
+                Collaborate across disciplines and contribute to student tech
+                communities.
+              </li>
+            </ul>
+            <p class="mb-0 small text-body-secondary">
+              Balance fundamentals with practical, ship-ready code.
+            </p>
+          </article>
+
+          <!-- 7 -->
+          <article class="page" data-title="Beyond class">
+            <h3 class="h5 mb-2">Beyond the classroom</h3>
+            <p class="mb-0">
+              Beyond the classroom, I’m a guitarist and sketch artist.
+              I also won a logo contest for Accenture’s UK&I market, 
+              and when I switch off, you’ll usually find me watching horror movies.
+            </p>
+          </article>
+
+          <!-- 8 -->
+          <article class="page" data-title="Contact & links">
+            <h3 class="h5 mb-2">Contact & links</h3>
+            <p class="mb-2">
+              I’m open to collaboration. Connect via LinkedIn or GitHub from the
+              footer.
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/modules/flipBook.js"></script>
+  </body>
+</html>
