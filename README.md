@@ -93,8 +93,8 @@ npx eslint assets/js --ext .js --fix
 ```
 
 ## Deploy
-- **GitHub Pages:** Settings → Pages → *Deploy from a branch* → `main` / root (`/`); publish.  
-- **Netlify/Cloudflare Pages:** Set publish directory to repo root; drag‑and‑drop or connect repo.
+- GitHub Pages: Settings → Pages → *Deploy from a branch* → `main` / root (`/`); publish.  
+- Netlify/Cloudflare Pages: Set publish directory to repo root; drag‑and‑drop or connect repo.
 ---
 
 ### About Flip-Book
@@ -105,7 +105,7 @@ Behavior lives in `assets/js/modules/flipBook.js` (open + flips).
 ### Meta & Icons (every page `<head>`)
 ```html
 <meta name="author" content="Sourav Das" />
-<meta name="description" content="Short page description." />
+<meta name="description" content="Sourav Das — portfolio, projects and resume." />
 <link rel="icon" href="./assets/icons/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="icon" href="./assets/icons/favicon-16.png" sizes="16x16" type="image/png" />
 <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
@@ -127,6 +127,16 @@ Behavior lives in `assets/js/modules/flipBook.js` (open + flips).
 - 'ESLint missing' → `npm install` then `npm run lint`.  
 - 'Strings must use double quote' → use `"double"` in JS or run `--fix`.  
 - 'Particles not visible' → only on `projects.html`; ensure `<canvas id="projects-canvas">` exists.
+
+---
+
+## AI used to create the 'project.html' page
+
+- Tool: OpenAI ChatGPT — GPT-5 Thinking
+- Context: Used for guidance, ideation and troubleshoot purpose.
+- Prompt1(to make the project.html page) - "I have 3 project entries. Teach me how to rearrange in a web page. I am planning to keep it like image | text, then text | image, then image | text. Do not provide any code. Just teach me how to do this in words.
+- Prompt2(animated particle header) - "Teach me how to build a particle or start 'constellation' animated header in 
+vanilla JS. Explain the structure how to create the first HTML and then the minimal JS."
 
 ---
 
