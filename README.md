@@ -139,6 +139,37 @@ Behavior lives in `assets/js/modules/flipBook.js` (open + flips).
 vanilla JS. Explain the structure how to create the first HTML and then the minimal JS."
 
 ---
+Screenshots
+
+<p align="center">
+  <img src="assets/images/first_page.png" alt="Homepage" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/about_page.png" alt="About the author" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/flipbook_open.png" alt="open book" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/project_page.png" alt="All the projects" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/education_page.png" alt="About the author" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/resume_page.png" alt="About the author" width="900">
+</p>
+
+<p align="center">
+  <img src="assets/images/user_persona.png" alt="About the author" width="900">
+</p>
+
+---
 
 ## License
 MIT — see `LICENSE`.
